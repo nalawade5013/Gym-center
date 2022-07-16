@@ -1,0 +1,61 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+  style  
+    include ../static/style2.css
+    
+      
+      
+
+block content 
+  
+ head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=, initial-scale=1.0')
+  script(src='https://cdn.tailwindcss.com')
+  title Document
+  .mid
+   ul.navbar
+    li
+      a.active(href='/') home
+    li
+      a(href='/about') about
+    li
+      a(href='/Fitness') Fitness
+    li
+      a(href='/contact') contact
+ section.events
+  .title
+    h1 About Fitness
+    .line
+  .row
+    .col
+      img(src='ok.jpg' alt='')
+      h4 Fit And Fine
+      p
+        | Get at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous aerobic activity a week, or an equal combination of moderate and vigorous aerobic activity. The guidelines suggest that you spread out this exercise during the course of a week. To provide even greater health benefit and to assist with weight loss or maintaining weight loss, at least 300 minutes a week is recommended. But even small amounts of physical activity are helpful. Being active for short periods of time throughout the day can add up to provide health benefits.
+
+      
+    .col
+      img(src='./t.jpg' alt='')
+      h4 A healthy mind in a healthy body.
+      p
+        | Do strength training exercises for all major muscle groups at least two times a week. Aim to do a single set of each exercise using a weight or resistance level heavy enough to tire your muscles after about 12 to 15 repetitions.
+  section.text-gray-600.body-font
+  .containerp.mx-auto.flex.px-5.py-24.flex-col.items-center(class='md')
+    .flex.flex-col.mb-16.items-center.text-center(class='lg')
+      h1.title-font.text-3xl.mb-4.font-medium.text-gray-900(class='sm')
+        | Nothing will work unless you do
+        br.kit
+        | readymade gluten
+      p.mb-8.leading-relaxed
+        | Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+      .flex.justify-center
+        button.inline-flex.text-white.bg-indigo-500.border-0.py-2.px-6.rounded.text-lg(class='focus:outline-none hover:bg-indigo-600') 
+        button.ml-4.inline-flex.text-gray-700.bg-gray-100.border-0.py-2.px-6.rounded.text-lg(class='focus:outline-none hover:bg-gray-200') 
+    .class
+       img.object-cover.object-center.rounded(alt='hero' src='../static/gd.webp')

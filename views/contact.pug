@@ -1,0 +1,31 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+ style
+   include ../static/style2.css
+   
+      
+block content 
+ .midk
+   ul.navbar
+    li
+      a.active(href='/') home
+    li
+      a(href='/about') about
+    li
+      a(href='/Fitness') Fitness
+    li
+      a(href='/contact') contact
+ div.container
+        h1 Contact us
+        form(action="/contact",method="post",class="myform")
+          input(type="text",class="myinput" ,name="name",  placeholder="Enter your name")
+          input(type="phone",class="myinput" ,name="phone",  placeholder="Enter your number")
+          input(type="email",class="myinput" ,name="emil",  placeholder="Enter your email")
+          input(type="text",class="myinput" ,name="adress",  placeholder="Enter your adress")
+          input(type="password",class="myinput" ,name="password",  placeholder="Enter your password")
+          button(class="btn") 
+            | submit  
